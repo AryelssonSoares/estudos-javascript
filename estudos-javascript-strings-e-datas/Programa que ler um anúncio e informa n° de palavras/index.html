@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let anuncio = prompt('Anúncio: ')
+
+        let tam = anuncio.length
+
+        let numPalavras = 0
+
+        for (let i = 0; i < tam; i++) {
+            if (anuncio.charAt(i) == '') {
+                numPalavras++
+            }
+        }
+        //alert('Anúncio: ' + anuncio + '\n N° Palavras: ' + (numPalavras + 1))
+        alert(`Anúncio: ${anuncio} \n N° Palavras: ${numPalavras + 1}`)
+    </script>
+</body>
+</html>

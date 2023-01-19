@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch...case</title>
+</head>
+<body>
+    <script>
+        let bairro = prompt('Bairro de entrega:')
+        let taxaEntrega
+        switch (bairro) {
+            case 'Centro':
+                taxaEntrega = 5.00
+                break;
+            case 'Caminho do porto':
+            case 'Retiro':
+                taxaEntrega = 7.00
+                break;
+            case 'Alto Brasil':
+                taxaEntrega = 10.00
+                break;
+            default:
+                taxaEntrega = 8.00
+                break;
+        }
+        alert(`Taxa R$: ${taxaEntrega.toFixed(2)}`)
+    </script>
+</body>
+</html>
